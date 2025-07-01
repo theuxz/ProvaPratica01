@@ -17,7 +17,7 @@ public class FuncionarioDAO {
         // REGRA 1: Ao cadastrar um funcionário, verificar se o ID da pessoa existe.
         PessoaDAO pessoaDAO = new PessoaDAO();
         if (pessoaDAO.buscarPessoaPorId(funcionario.getId()) == null) {
-            System.err.println("❌ Falha ao cadastrar: O ID de pessoa informado não existe.");
+            System.err.println("Falha ao cadastrar: O ID de pessoa informado não existe.");
             return;
         }
 
